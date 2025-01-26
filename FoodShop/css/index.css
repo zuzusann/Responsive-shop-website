@@ -1,0 +1,145 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-brand{
+  font-size: 2rem;
+  color: black;
+}
+
+.navbar-brand:hover{
+  color: black;
+}
+
+.nav-menu{
+  margin-right: 10px;
+  margin-left: 10px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.nav-link:hover{
+  color: black;
+}
+
+
+.search{  
+  height: 40px;
+  width: 80%;
+  border-radius: 50px;
+  outline: none;
+  border: 2px solid rgb(248, 26, 92);
+  margin-left: -35px;
+}
+
+.main {
+  background: url(../image/main-photo.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  background-position: 50% 50%;
+}
+
+.main h1{
+  font-size: 4rem;
+  font-weight: 700; 
+}
+
+.btn1{
+  height: 50px;
+  width: 30%;
+  border: none;
+  color: black;
+  font-weight: 500;
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+.img-feature{
+  width: 100px;
+}
+
+.product h1{
+  font-weight: 700;
+}
+
+.img-product{
+  width: 200px;
+}
+
+.btn-click{
+  height: 45px;
+  width: 35%;
+  border: none;
+  outline: none;
+  background:rgb(248, 26, 92);
+  color: white;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+.btn-click:hover{
+  background: yellow;
+  transition: 0.5s;
+}
+
+.card:hover{
+  -webkit-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 35px 0px rgba(0,0,0,0.75);
+  transition: 0.5s;
+}
+
+.apple{
+  background: url(../image/main-photo.avif);
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 100%;
+  background-position: right; 
+}
+
+.apple h1{
+  font-family: "Lobster",cursive;
+}
+
+.news{
+  background: black;
+  color: white;
+}
+
+.btn-news{
+  height: 45px;
+  width: 100px;
+  background: white;
+  margin-left: -10px;
+  border: 2px solid white;
+  font-weight: 600;
+}
+
+.news input{
+  height: 45px;
+  width: 55%;
+  border: none;
+  outline: none;
+  background: black;
+  color: white;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.news::placeholder{
+  color: white;
+}
+
+.news p{
+  margin: 0;
+}
+
+.fa-brands{
+  color: white;
+  cursor: pointer;
+  padding-right: 10px;
+}
