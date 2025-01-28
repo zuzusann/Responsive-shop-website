@@ -56,7 +56,7 @@
     <div class="container-fluid mt-5 py-5">
         <div class="container py-5">
             <div class="table-responsive">
-                <table class="table">
+                <table class="table js-order-summery">
                     <thead>
                       <tr>
                         <th scope="col">Products</th>
@@ -64,7 +64,6 @@
                         <th scope="col">Price</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Total</th>
-                        <th scope="col">Handle</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -82,27 +81,15 @@
                             </td>
                             <td>
                                 <div class="input-group quantity mt-4" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
-                                        <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
+
                                     <input type="text" class="form-control form-control-sm text-center border-0" value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-plus rounded-circle bg-light border">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
+                                    
                                 </div>
                             </td>
                             <td>
                                 <p class="mb-0 mt-4">2.99 $</p>
                             </td>
-                            <td>
-                                <button class="btn btn-md rounded-circle bg-light border mt-4" >
-                                    <i class="fa fa-times text-danger"></i>
-                                </button>
-                            </td>
+                            
                         
                         </tr>
                         <tr>
@@ -119,27 +106,15 @@
                             </td>
                             <td>
                                 <div class="input-group quantity mt-4" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
-                                        <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
+                                   
                                     <input type="text" class="form-control form-control-sm text-center border-0" value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-plus rounded-circle bg-light border">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
+                                  
                                 </div>
                             </td>
                             <td>
                                 <p class="mb-0 mt-4">2.99 $</p>
                             </td>
-                            <td>
-                                <button class="btn btn-md rounded-circle bg-light border mt-4" >
-                                    <i class="fa fa-times text-danger"></i>
-                                </button>
-                            </td>
+                           
                         </tr>
                         <tr>
                             <th scope="row">
@@ -155,27 +130,15 @@
                             </td>
                             <td>
                                 <div class="input-group quantity mt-4" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-minus rounded-circle bg-light border" >
-                                        <i class="fa fa-minus"></i>
-                                        </button>
-                                    </div>
+                                    
                                     <input type="text" class="form-control form-control-sm text-center border-0" value="1">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-plus rounded-circle bg-light border">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
+                                  
                                 </div>
                             </td>
                             <td>
                                 <p class="mb-0 mt-4">2.99 $</p>
                             </td>
-                            <td>
-                                <button class="btn btn-md rounded-circle bg-light border mt-4" >
-                                    <i class="fa fa-times text-danger"></i>
-                                </button>
-                            </td>
+                           
                         </tr>
                     </tbody>
                 </table>
@@ -220,6 +183,7 @@
 
     <!-- javascript -->
     <script type="module" src="javascript/index.js"></script>
+    <script type="module" src="javascript/cartItems.js"></script>
         
 
 </body>

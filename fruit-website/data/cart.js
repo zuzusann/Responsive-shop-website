@@ -1,4 +1,10 @@
-export const cart = [];
+export const cart = [{
+   productId: '1',
+   image: 'image/fruite-item-1.jpg',
+   name: 'Oranges',
+   priceCents: 1090,
+   quantity: 2,
+}];
 
 export function addToCart(productId){
     let matchingItem;
