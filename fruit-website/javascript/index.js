@@ -1,6 +1,6 @@
 const  products = [{
     image: 'image/fruite-item-1.jpg',
-    name: 'Oranges',
+    name: '',
     priceCents: 1090
   }, {
     image: 'image/fruite-item-2.jpg',
