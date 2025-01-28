@@ -1,52 +1,52 @@
-const  products = [{
-    image: 'image/fruite-item-1.jpg',
-    name: '',
-    priceCents: 1090
-  }, {
-    image: 'image/fruite-item-2.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  }, {
-    image: 'image/fruite-item-3.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  },{
-    image: 'image/fruite-item-4.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  },{
-    image: 'image/fruite-item-5.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  },{
-    image: 'image/fruite-item-6.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  },{
-    image: 'image/fruite-item-1.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  },{
-    image: 'image/fruite-item-2.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  },{
-    image: 'image/vegetable-item-5.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  },{
-    image: 'image/vegetable-item-4.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  },{
-    image: 'image/vegetable-item-6.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  },{
-    image: 'image/vegetable-item-5.jpg',
-    name: 'Oranges',
-    priceCents: 1090
-  }]
+// const  products = [{
+//     image: 'image/fruite-item-1.jpg',
+//     name: '',
+//     priceCents: 1090
+//   }, {
+//     image: 'image/fruite-item-2.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   }, {
+//     image: 'image/fruite-item-3.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   },{
+//     image: 'image/fruite-item-4.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   },{
+//     image: 'image/fruite-item-5.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   },{
+//     image: 'image/fruite-item-6.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   },{
+//     image: 'image/fruite-item-1.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   },{
+//     image: 'image/fruite-item-2.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   },{
+//     image: 'image/vegetable-item-5.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   },{
+//     image: 'image/vegetable-item-4.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   },{
+//     image: 'image/vegetable-item-6.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   },{
+//     image: 'image/vegetable-item-5.jpg',
+//     name: 'Oranges',
+//     priceCents: 1090
+//   }]
   
   let productsHTML = '';
   
@@ -64,7 +64,7 @@ const  products = [{
             
               <div class="text-center">
                   <p class="text-dark fs-7 mb-2">$${(products.priceCents/100).toFixed(2)} / kg</p>
-                  <a href="#" class="btn add-to-cart-btn border border-secondary rounded-pill px-3 text-primary">Add to cart</a>
+                  <a href="#" class="btn js-add-to-cart border border-secondary rounded-pill px-3 text-primary">Add to cart</a>
               </div>
             </div>
           </div>
@@ -72,9 +72,14 @@ const  products = [{
   `;
   })
   
-  console.log(productsHTML);
+
   
   document.querySelector('.js-products-grid').innerHTML = productsHTML;
   
-  
+  document.querySelectorAll('.js-add-to-cart')
+    .forEach((button) => {
+      button.addEventListener('click', () => {
+        console.log('Added Product');
+      });
+    });
   
