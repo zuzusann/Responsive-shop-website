@@ -64,7 +64,8 @@
             
               <div class="text-center">
                   <p class="text-dark fs-7 mb-2">$${(products.priceCents/100).toFixed(2)} / kg</p>
-                  <a href="#" class="btn js-add-to-cart border border-secondary rounded-pill px-3 text-primary">Add to cart</a>
+                  <a href="#" class="btn js-add-to-cart border border-secondary rounded-pill px-3 text-primary"
+                  data-product-id="${products.id}">Add to cart</a>
               </div>
             </div>
           </div>
@@ -79,7 +80,25 @@
   document.querySelectorAll('.js-add-to-cart')
     .forEach((button) => {
       button.addEventListener('click', () => {
-        console.log('Added Product');
+        const productId = button.dataset.productId;
+
+        let matchingItem;
+
+        cart.forEach((item) => {
+          if(productId === item.productId){
+            matchingItem = item;
+          }
+        });
+
+        if(matchingItem){
+          matchingItem.quantity += 1;
+        }else{
+          cart.push({
+            productId: productId,
+            quantity: 1
+          });
+        }
+        console.log(cart);
       });
     });
-  
+      
