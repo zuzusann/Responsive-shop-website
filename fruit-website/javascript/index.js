@@ -12,13 +12,13 @@ import { products } from "../data/product.js";
           <div class="fruite-img">
               <img src="${products.image}" class="img-fluid w-100 rounded-top" alt="">
           </div>
-          <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+          <div class="text-white bg-primary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
           <div class="p-4 border border-secondary border-top-0 rounded-bottom">
               <h4>${products.name}</h4>
             
               <div class="text-center">
                   <p class="text-dark fs-7 mb-2">$${(products.priceCents/100).toFixed(2)} / kg</p>
-                  <a href="#" class="btn js-add-to-cart border border-secondary rounded-pill px-3 text-primary"
+                  <a href="#" class="btn js-add-to-cart border border-secondary bg-secondary rounded-pill px-3 text-white"
                   data-product-id="${products.id}">Add to cart</a>
               </div>
             </div>

@@ -38,12 +38,13 @@
 
 .btn.border-secondary {
     transition: 0.5s;
+    color: #333333  !important;
+
 }
 
 .btn.border-secondary:hover {
-    background: #ffc101 !important;
-    color: whitesmoke !important;
-    transform: scale(1.1);
+    background: #FFC84F !important;
+    color: #333333  !important;
 }
 
 .main-btn{
